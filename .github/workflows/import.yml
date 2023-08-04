@@ -9,10 +9,13 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/auth@v0
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: google-github-actions/auth@v0
         with:
           service_account: doc2github@doc2github.iam.gserviceaccount.com
           workload_identity_provider: projects/1004789866380/locations/global/workloadIdentityPools/githubaction/providers/my-provider-id
-      - uses: r7kamura/google-docs-to-github@v3
-        with:
-          google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7
+      
+      - name: Check installation
+        run: |
+            echo "success!"
