@@ -21,6 +21,6 @@ jobs:
           service_account: doc2github@doc2github.iam.gserviceaccount.com
           workload_identity_provider: projects/1004789866380/locations/global/workloadIdentityPools/githubaction/providers/my-provider-id
       
-      - name: Check installation
-        run: |
-            echo "success!"
+      - uses: r7kamura/google-docs-to-github@v3
+        with:
+            google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7
