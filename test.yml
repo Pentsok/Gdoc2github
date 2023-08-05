@@ -1,0 +1,6 @@
+gcloud iam service-accounts add-iam-policy-binding "github-actions-570@doc2github.iam.gserviceaccount.com" \
+  --project="doc2github" \
+  --role="roles/iam.workloadIdentityUser" \
+  --member="principalSet://iam.googleapis.com/projects/1004789866380/locations/global/workloadIdentityPools/providers/attribute.repository/Lungsangg/Gdoc2github"
+
+
