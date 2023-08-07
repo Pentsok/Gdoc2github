@@ -21,5 +21,9 @@ jobs:
           service_account: github-actions@test1-395206.iam.gserviceaccount.com
           workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/my-provider-id
       
+      - uses: r7kamura/google-docs-to-github@v3
+        with:
+              google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7  
+
       - name: Echo "success"
         run: echo "success"
