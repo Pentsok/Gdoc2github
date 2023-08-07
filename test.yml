@@ -1,6 +1,13 @@
-gcloud iam service-accounts add-iam-policy-binding "github-actions-570@doc2github.iam.gserviceaccount.com" \
-  --project="doc2github" \
+gcloud iam service-accounts add-iam-policy-binding "github-actions@test1-395206.iam.gserviceaccount.com" \
+  --project="test1-395206" \
   --role="roles/iam.workloadIdentityUser" \
-  --member="principalSet://iam.googleapis.com/projects/1004789866380/locations/global/workloadIdentityPools/providers/attribute.repository/Lungsangg/Gdoc2github"
+  --member="principalSet://iam.googleapis.com/projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/attribute.repository/Lungsangg/Gdoc2github"
 
 
+https://iam.googleapis.com/projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/github01
+
+
+
+google.subject     assertion.sub
+attribute.actor    assertion.actor
+attribute.repository assertion.repository
