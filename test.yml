@@ -11,3 +11,15 @@ https://iam.googleapis.com/projects/562436113365/locations/global/workloadIdenti
 google.subject     assertion.sub
 attribute.actor    assertion.actor
 attribute.repository assertion.repository
+
+
+
+- uses: r7kamura/google-docs-to-github@v3
+        with:
+            google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7
+
+
+
+ permissions:
+      contents: 'read'
+      id-token: 'write'            
