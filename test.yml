@@ -23,3 +23,16 @@ attribute.repository assertion.repository
  permissions:
       contents: 'read'
       id-token: 'write'            
+
+
+      - name: Configure Git
+        run: |
+          git config user.name "lungsang-bod"
+          git config user.email "lungsang@esukhia.org"
+          git config --global credential.helper store
+      
+      - name: Push changes to GitHub
+        run: |
+          git add .
+          git commit -m "Imported Google Drive documents"
+          git push origin HEAD:main        
