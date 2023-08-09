@@ -3,7 +3,7 @@ name: import
 on:
   push:
     branches:
-      - main
+      - docs-import
 
 jobs:
   publish:
