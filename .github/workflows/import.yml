@@ -19,7 +19,7 @@ jobs:
         uses: google-github-actions/auth@v0
         with:
           service_account: github-actions@test1-395206.iam.gserviceaccount.com
-          workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/my-provider-id
+          workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/github01
       
       - uses: r7kamura/google-docs-to-github@v3
         with:
