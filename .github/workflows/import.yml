@@ -3,15 +3,17 @@ name: import
 on:
   push:
     branches:
-      - main
+      - docs-import
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: 'read'
+      contents: 'write'
       id-token: 'write'
+      pull-requests: write
+      repository-projects: write
 
     steps:
       - id: 'auth'
@@ -20,6 +22,7 @@ jobs:
         with:
           service_account: github-actions@test1-395206.iam.gserviceaccount.com
           workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/github01
+            
       
       - uses: r7kamura/google-docs-to-github@v3
         with:
