@@ -22,6 +22,14 @@ jobs:
         with:
           service_account: github-actions@test1-395206.iam.gserviceaccount.com
           workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/github01
+
+      - name: Configure Git
+        run: |
+            git config --global user.email "lungsang@esukhia.org"
+            git config --global user.name "GitHub-Actions"
+            git config --global credential.helper store
+            git remote set-url origin "https://github.com/Lungsangg/Gdoc2github"
+            
       
       - uses: r7kamura/google-docs-to-github@v3
         with:
