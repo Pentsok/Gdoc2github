@@ -20,22 +20,24 @@ jobs:
         with:
           service_account: github-actions@test1-395206.iam.gserviceaccount.com
           workload_identity_provider: projects/562436113365/locations/global/workloadIdentityPools/github-actions-1/providers/github01
-      
-      - uses: r7kamura/google-docs-to-github@v3
-        with:
-              google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7  
 
       - name: Configure Git
         run: |
           git config user.name "lungsang-bod"
           git config user.email "lungsang@esukhia.org"
           git config --global credential.helper store
-      
+        
       - name: Push changes to GitHub
         run: |
           git add .
           git commit -m "Imported Google Drive documents"
           git push origin HEAD:main  
+      
+      
+      - uses: r7kamura/google-docs-to-github@v3
+        with:
+              google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7  
 
+      
       - name: Echo "success"
         run: echo "success"
