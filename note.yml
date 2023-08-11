@@ -13,7 +13,6 @@ attribute.actor    assertion.actor
 attribute.repository assertion.repository
 
 
-
 - uses: r7kamura/google-docs-to-github@v3
         with:
             google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7

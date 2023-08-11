@@ -26,8 +26,8 @@ jobs:
       
       - uses: r7kamura/google-docs-to-github@v3
         with:
-              google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7 
-              github_directory: 'Gdoc2github/tibetanfont' 
+              google_drive_folder_id: 1oVMxR8FtWre1k2bqDOxpLYbPDUrifBv7
+              github_directory: docs
 
       - name: Echo "success"
         run: echo "success"
