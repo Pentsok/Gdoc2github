@@ -1,6 +1,5 @@
-- Reception
-    - [དབུ་ཅན་]()
+- tibetan fonts
+    - [དབུ་ཅན་](དབུ་ཅན་.md)
     - [coming_page](/)
 
-- Production
-    - [coming_page](/)        
+       
